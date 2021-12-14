@@ -10,8 +10,35 @@
 <body>
   <div class="maincontainer">
     <h1>Library</h1>
-    <button>Add Book</button>
+    <button id="addbookbutton">Add Book</button>
+  </div>
+  <div class="form-popup" id="myForm">
+    <form class="form-container">
+      <label for="title"><b>Title</b></label>
+      <input type="text" id="booktitle" placeholder="Enter Title" name="title" required>
+
+      <label for="author"><b>Author</b></label>
+      <input type="text" id="bookauthor" placeholder="Enter Author" name="author" required>
+
+      <label for="Pages"><b>Pages</b></label>
+      <input type="number" id="bookpages" placeholder="Enter Pages" name="pages" required>
+    </form>
+    <button id="submitbutton">Submit</button>
+  </div>
+  <div class="bookdisplay">
+    <table id="table">
+      <thead>
+        <tr>
+          <th>Title</th>
+          <th>Author</th>
+          <th>Pages</th>
+        </tr>
+      </thead>
+      <tbody id="tablebody">
+      </tbody>
+    </table>
   </div>
 </body>
 <script src="library.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js""></script>
 </html>
