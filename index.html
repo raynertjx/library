@@ -8,35 +8,40 @@
   <title>Document</title>
 </head>
 <body>
-  <div class="maincontainer">
-    <h1>Library</h1>
-    <button id="addbookbutton">Add Book</button>
-  </div>
-  <div class="form-popup" id="myForm">
-    <form class="form-container">
-      <label for="title"><b>Title</b></label>
-      <input type="text" id="booktitle" placeholder="Enter Title" name="title" required>
-
-      <label for="author"><b>Author</b></label>
-      <input type="text" id="bookauthor" placeholder="Enter Author" name="author" required>
-
-      <label for="Pages"><b>Pages</b></label>
-      <input type="number" id="bookpages" placeholder="Enter Pages" name="pages" required>
-    </form>
-    <button id="submitbutton">Submit</button>
-  </div>
-  <div class="bookdisplay">
-    <table id="table">
-      <thead>
-        <tr>
-          <th>Title</th>
-          <th>Author</th>
-          <th>Pages</th>
-        </tr>
-      </thead>
-      <tbody id="tablebody">
-      </tbody>
-    </table>
+  <div class="main">
+    <div class="leftcontainer">
+      <div class="logo">
+        <h1>Library</h1>
+      </div>
+      <div class="form-popup" id="myForm">
+        <form class="form-container">
+            <label for="title"><b>Title</b></label>
+            <input type="text" id="booktitle" placeholder="Enter Title" name="title" required>
+            <label for="author"><b>Author</b></label>
+            <input type="text" id="bookauthor" placeholder="Enter Author" name="author" required>
+            <label for="pages"><b>Pages</b></label>
+            <input type="number" id="bookpages" placeholder="Enter Pages" name="pages" required>
+            <label for="checkbox"><b>Have you read it?</b></label>
+            <input type="checkbox" name="checkbox" id="checkbox">
+        </form>
+        <button type="submit" id="submitbutton">Submit</button>
+      </div>
+    </div>
+    <div class="rightcontainer">
+      <table class="table" id="table">
+        <thead>
+          <tr>
+            <th class="title">Title</th>
+            <th class="author">Author</th>
+            <th class="pages">Pages</th>
+            <th class="readstatus">Read Status</th>
+            <th class="delete">Delete</th>
+          </tr>
+        </thead>
+        <tbody class="tablebody" id="tablebody">
+        </tbody>
+      </table>
+    </div>
   </div>
 </body>
 <script src="library.js"></script>
