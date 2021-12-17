@@ -1,23 +1,61 @@
 html, body {
-  height: 90%;
+  height: 100%;
+  overflow: hidden
 }
 
-.maincontainer {
+body {
+  margin: 0;
+}
+ 
+.main {
   display: flex;
   flex-direction: column;
-  justify-content: center;
   align-items: center;
-  min-height: 100%;
 }
 
 h1 {
-  font-size: 100px;
+  font-size: 50px;
 }
 
 #addbookbutton {
-  font-size: 50px;
+  font-size: 30px;
  }
 
-.form-container {
-  max-width: 200px;
+.form-popup {
+  display: flex;
 }
+
+.form-container {
+  flex-direction: row;
+}
+
+.leftcontainer {
+  flex: 1;
+  height: 100vh;
+  background-color: #d7e5ee;
+  min-width: 10cm;
+  border-right: 5px ridge #79bbd9
+}
+
+.rightcontainer {
+  align-self: flex-start;
+  background-color: #f8f6f2;
+  height: 100vh;
+}
+
+.table {
+  border-collapse: separate;
+  border-spacing: 0 15px;
+  table-layout: fixed;
+  max-width: 200vh;
+}
+
+th, td {
+  font-size: 30px;
+  width: 10cm;
+  text-align: center;
+  border: 1px solid black;
+  padding: 5px;
+  word-wrap: break-word;
+}
+
