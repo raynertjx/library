@@ -71,8 +71,8 @@ function displayBooks() {
     <td>${book.title}</td>
     <td>${book.author}</td>
     <td>${book.pages}</td>
-    <td><button class="readbookbutton">${book.readstatus}</button></td>
-    <td><button class="deletebookbutton">D</button></td>
+    <td><button class="readbookbutton">${book.readstatus.toUpperCase()}</button></td>
+    <td><button class="deletebookbutton">DELETE</button></td>
     </tr>
     `;
     tableBody.insertAdjacentHTML("afterbegin", htmlBook);
