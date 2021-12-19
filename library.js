@@ -78,6 +78,20 @@ function displayBooks() {
     tableBody.insertAdjacentHTML("afterbegin", htmlBook);
   })
 }
+
+function checkForm() {
+  var inputs = myForm.getElementsByTagName("input");
+  for (var i = 0; i < inputs.length; i++) {
+    if (inputs[i].hasAttribute("required")) {
+      if (inputs[i].value == "") {
+        alert ("Please fill all required fields")
+        return false;
+      }
+    }
+  }
+  return true;
+}
+
 displayBooks();
 
 submitBtn.addEventListener("click", () => {
@@ -87,7 +101,10 @@ submitBtn.addEventListener("click", () => {
       return;
     }
   }
-  resetTable();
-  addBookToLibrary();
-  displayBooks();
+  
+  if(checkForm()) {
+    resetTable();
+    addBookToLibrary();
+    displayBooks();
+  }
 });
