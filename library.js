@@ -3,7 +3,7 @@ const myForm = document.getElementById("myForm");
 const bookTitle = document.getElementById("booktitle");
 const bookAuthor = document.getElementById("bookauthor");
 const bookPages = document.getElementById("bookpages");
-const checkBox = document.getElementById("checkbox");
+const readStatusMenu = document.getElementById("readstatusmenu");
 const table = document.getElementById("table");
 const tableBody = document.getElementById("book-table-body");
 
@@ -55,13 +55,7 @@ function findBook(libraryArray, name) {
 }
 
 function addBookToLibrary() {
-  if (checkBox.checked == true) {
-    checkBox.value = "Read"
-  } 
-  else {
-    checkBox.value = "Not Read"
-  }
-  myLibrary.push(new Book(bookTitle.value, bookAuthor.value, bookPages.value, checkBox.value));
+  myLibrary.push(new Book(bookTitle.value, bookAuthor.value, bookPages.value, readStatusMenu.value));
 }
 
 

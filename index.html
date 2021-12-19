@@ -21,10 +21,13 @@
             <input type="text" id="bookauthor" placeholder="Enter Author" name="author" required>
             <label for="pages"><b>Pages</b></label>
             <input type="number" id="bookpages" placeholder="Enter Pages" name="pages" required>
-            <label for="checkbox"><b>Have you read it?</b></label>
-            <input type="checkbox" name="checkbox" id="checkbox">
+            <label for="readstatusmenu"><b>Have you read it?</b></label>
+            <select name="readstatusmenu" id="readstatusmenu">
+              <option value="Read">Read</option>
+              <option value="Not Read">Not Read</option>
+            </select>
+            <button type="button" id="submitbutton">Submit</button>
           </form>
-          <button type="submit" id="submitbutton">Submit</button>
       </div>
     </div>
     <div class="rightcontainer">
