@@ -1,6 +1,9 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="style.css">
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -9,28 +12,36 @@
 </head>
 <body>
   <div class="main">
-    <div class="leftcontainer">
+    <div class="uppercontainer">
       <div class="logo">
-        <h1>Library</h1>
+        <h1>My Library</h1>
       </div>
       <div class="form-popup">
         <form class="form-container" id="myForm" autocomplete="off">
+          <div class="form-field">
             <label for="title"><b>Title</b></label>
             <input type="text" id="booktitle" placeholder="Enter Title" name="title" required>
+          </div>
+          <div class="form-field">
             <label for="author"><b>Author</b></label>
             <input type="text" id="bookauthor" placeholder="Enter Author" name="author" required>
+          </div>
+          <div class="form-field">
             <label for="pages"><b>Pages</b></label>
             <input type="number" id="bookpages" placeholder="Enter Pages" name="pages" required>
-            <label for="readstatusmenu"><b>Have you read it?</b></label>
+          </div>
+          <div class="form-field">
+            <label for="readstatusmenu"><b>Status</b></label>
             <select name="readstatusmenu" id="readstatusmenu">
               <option value="Read">Read</option>
               <option value="Not Read">Not Read</option>
             </select>
-            <button type="button" id="submitbutton">Submit</button>
-          </form>
+          </div>
+        </form>
+        <button type="button" id="submitbutton" class="submitbutton">SUBMIT</button>
       </div>
     </div>
-    <div class="rightcontainer">
+    <div class="lowercontainer">
       <table class="table" id="table">
         <tr>
           <th class="title">Title</th>
