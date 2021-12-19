@@ -4,58 +4,102 @@ html, body {
 }
 
 body {
+  background-color: #f7f7f7;
+  font-family: 'Roboto', sans-serif;
+  font-weight: lighter;
   margin: 0;
-}
- 
-.main {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
 }
 
 h1 {
-  font-size: 50px;
+  font-size: 60px;
+  font-weight: lighter;
 }
 
-#addbookbutton {
-  font-size: 30px;
- }
+button {
+  font-family: 'Roboto', sans-serif;
+  width: 90px;
+  height: 30px;
+  font-size: 13px;
+  border-radius: 5px;
+  border: 0;
+  padding: 0;
+  margin: 0;
+}
 
-.form-popup {
+.main {
   display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 
-.form-container {
-  flex-direction: row;
+.uppercontainer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  padding-bottom: 20px;
+  border-bottom: 4px solid #c9c9c9;
 }
 
-.leftcontainer {
-  flex: 1;
+.lowercontainer {
+  margin-top: 30px;
   height: 100vh;
-  background-color: #d7e5ee;
-  min-width: 10cm;
-  border-right: 5px ridge #79bbd9
-}
-
-.rightcontainer {
-  align-self: flex-start;
-  background-color: #f8f6f2;
-  height: 100vh;
-}
-
-.table {
-  border-collapse: separate;
-  border-spacing: 0 15px;
-  table-layout: fixed;
-  max-width: 200vh;
 }
 
 th, td {
-  font-size: 30px;
-  width: 10cm;
-  text-align: center;
-  border: 1px solid black;
+  font-size: 20px;
+  width: 30vh;
+  text-align: left;
+  border-bottom: 1px solid #c9c9c9;
   padding: 5px;
   word-wrap: break-word;
 }
 
+.table {
+  border-collapse: separate;
+  border-spacing: 0px;
+  table-layout: fixed;
+}
+
+.form-popup {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.form-container {
+  display: flex;
+  gap: 60px;
+  font-size: 20px;
+}
+
+.form-field {
+  display: flex;
+  flex-direction: column;
+}
+
+input[type=text], input[type=number] {
+  height: 20px;
+  font-size: 15px;
+}
+
+.submitbutton {
+  align-self: flex-end;
+  background-color: #87afaf;
+}
+
+.readbookbutton {
+  background-color: #f7f7f7;
+  border: 1px solid #c9c9c9;
+}
+
+.deletebookbutton {
+  background-color: #d75f5f;
+}
+
+#readstatusmenu {
+height: 26px;
+font-size: 15px;
+}
