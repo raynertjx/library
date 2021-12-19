@@ -14,7 +14,7 @@
         <h1>Library</h1>
       </div>
       <div class="form-popup" id="myForm">
-        <form class="form-container">
+        <form class="form-container" autocomplete="off">
             <label for="title"><b>Title</b></label>
             <input type="text" id="booktitle" placeholder="Enter Title" name="title" required>
             <label for="author"><b>Author</b></label>
@@ -29,17 +29,14 @@
     </div>
     <div class="rightcontainer">
       <table class="table" id="table">
-        <thead>
-          <tr>
-            <th class="title">Title</th>
-            <th class="author">Author</th>
-            <th class="pages">Pages</th>
-            <th class="readstatus">Read Status</th>
-            <th class="delete">Delete</th>
-          </tr>
-        </thead>
-        <tbody class="tablebody" id="tablebody">
-        </tbody>
+        <tr>
+          <th class="title">Title</th>
+          <th class="author">Author</th>
+          <th class="pages">Pages</th>
+          <th class="readstatus">Read Status</th>
+          <th class="delete">Delete</th>
+        </tr>
+        <tbody id="book-table-body"></tbody>
       </table>
     </div>
   </div>
