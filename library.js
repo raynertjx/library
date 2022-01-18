@@ -7,12 +7,14 @@ const readStatusMenu = document.getElementById("readstatusmenu");
 const table = document.getElementById("table");
 const tableBody = document.getElementById("book-table-body");
 
-function Book(title, author, pages, readstatus) {
-  this.title = title
-  this.author = author
-  this.pages = pages
-  this.readstatus = readstatus
+class Book {
+  constructor(title, author, pages, readstatus) {
+    this.title = title;
+    this.author = author;
+    this.pages = pages;
+    this.readstatus = readstatus;
   }
+}
 
 let myLibrary = [];
 
